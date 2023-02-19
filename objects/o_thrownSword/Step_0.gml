@@ -9,30 +9,20 @@ if (done == 0) {
 	//animation
 	image_angle = darctan2(-vsp,hsp)+160;
 
-	//horz collide
-	if (place_meeting(x+hsp,y,o_wall)) 
-	{
-		while (!place_meeting(x+sign(hsp),y,o_wall)) 
-		{
-			x = x + sign(hsp);
+	if !recall {
+		calcCollision();
+	} else {
+		if directionrecalc >= 2 {
+			recalldir = point_direction(x,y,o_player.x,o_player.y+3)
+			hsp = lengthdir_x(12*recallstrength,recalldir);
+			vsp = lengthdir_y(12*recallstrength,recalldir);
+			recallstrength = recallstrength*1.05
+			directionrecalc = -1;
 		}
-		hsp = 0;
+		x += hsp;
+		y += vsp;
+		directionrecalc++;
 	}
-	x = x+hsp;
-
-	//vert collide
-	if (place_meeting(x,y+vsp,o_wall)) 
-	{
-		if (vsp > 0) {
-			done = 1;
-		}
-		while (!place_meeting(x,y+sign(vsp),o_wall)) 
-		{
-			y = y + sign(vsp);
-		}
-		vsp = 0;
-	}
-	y = y + vsp;
 	
 	grv = min(grv + 0.005,2);
 }

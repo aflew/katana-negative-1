@@ -1,0 +1,1 @@
+/// @description red rectangle

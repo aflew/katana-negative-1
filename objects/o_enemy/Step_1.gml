@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description check if dead
 if (hp <= 0) 
 {
 	with(instance_create_layer(x,y,layer,o_dead_enemy)) {

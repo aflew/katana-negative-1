@@ -9,6 +9,7 @@ with (o_player) {
 
 attack_cooldown--;
 dash_cd--;
+
 //dash
 if (o_player.key_dash) && (dash_cd < 0) && can_dash {
 		attack_cooldown = 3;
@@ -17,6 +18,7 @@ if (o_player.key_dash) && (dash_cd < 0) && can_dash {
 		instance_create_layer(o_player.x,o_player.y+4,"sword",o_dash)
 		o_player.sprite_index = s_player_dash;
 }
+
 //sword actions
 if swordHeld {
 	//basic sword attack
@@ -34,6 +36,7 @@ if swordHeld {
 		instance_create_layer(o_player.x,o_player.y,"sword",o_thrownSword)
 	}
 }
+
 //no sword actions
 else {
 	//retrieve sword
@@ -46,6 +49,7 @@ else {
 			vsp = lengthdir_y(12,recalldir);
 			other.attack_cooldown = 30;
 			grv = 0;
+			recall = true;
 		}
 	}
 }

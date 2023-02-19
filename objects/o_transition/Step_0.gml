@@ -10,7 +10,7 @@ if mode != TRANS_MODE.OFF
 	{
 		percent = min(1,percent + max((1-percent)/12,0.015))
 	}
-	if percent == 1 || percent == 0
+	if percent == 1 || percent == 0 // once the black bars have finished, change modes
 	{
 		switch(mode)
 		{

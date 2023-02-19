@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description initialize vars
 hsp = 0;
 hspdecay = 0.8;
 vsp = 0;

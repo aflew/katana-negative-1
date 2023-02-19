@@ -2,7 +2,7 @@
 if !done {
 	with (other) {
 		if (iframes < 0) {
-			hp = hp - 2;
+			hp = hp - other.damage;
 			flash = 3;
 			iframes = 6;
 		}

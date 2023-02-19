@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "invisible room objects",
+    "path": "folders/Objects/invisible room objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
