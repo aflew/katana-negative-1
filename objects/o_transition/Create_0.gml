@@ -1,0 +1,26 @@
+/// @description 
+
+w = display_get_gui_width();
+h = display_get_gui_height();
+
+
+enum TRANS_MODE
+{
+	OFF,
+	NEXT,
+	GOTO,
+	RESTART,
+	INTRO
+}
+
+enum transdir
+{
+	mid,
+	LtoR,
+	UtoD,
+}
+
+dir = transdir.mid;
+mode = TRANS_MODE.INTRO;
+percent = 1;
+target = room;
