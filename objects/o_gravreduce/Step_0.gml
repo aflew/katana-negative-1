@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description lifespan
 // You can write your code in this editor
 counter--;
 if (counter < 0) {
