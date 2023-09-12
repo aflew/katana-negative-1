@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "r1",
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/r1/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
@@ -239,6 +239,7 @@
     {"name":"inst_32D9B3EC","path":"rooms/r1/r1.yy",},
     {"name":"inst_1165A4AC","path":"rooms/r1/r1.yy",},
     {"name":"inst_4792E588","path":"rooms/r1/r1.yy",},
+    {"name":"inst_7776FC53","path":"rooms/r1/r1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -272,6 +273,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_72298FFC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":334.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_CA0A46B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":334.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F8855F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":206.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7776FC53","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_enemy_gun","path":"objects/o_enemy_gun/o_enemy_gun.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1082.0,"y":213.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"sword","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B8D2ED7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_crystal","path":"objects/o_crystal/o_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":128.0,},

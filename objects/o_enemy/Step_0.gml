@@ -31,10 +31,10 @@ else
 		sprite_index = s_enemy_run;
 	}
 }
-if (hsp != 0)
-{
-	facing = sign(hsp);
-	image_xscale = facing;
-}
+//if (hsp != 0)
+//{
+//	facing = sign(hsp);
+//	image_xscale = facing;
+//}
 
 

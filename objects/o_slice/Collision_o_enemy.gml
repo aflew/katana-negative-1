@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description unused, on o_enemy now
 /***
 if (other.iframes < 0) {
 	with (other) {
