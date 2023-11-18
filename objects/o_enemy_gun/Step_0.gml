@@ -5,7 +5,7 @@ if (owner) {
 	} else {
 		x = owner.x;
 		y = owner.y+2;
-		owner.image_xscale = image_yscale;
+		//owner.image_xscale = image_yscale;
 	}
 }
 
@@ -18,14 +18,4 @@ if (distance_to_object(o_player) < range) {
 		image_angle = point_direction(x,y,o_player.x,o_player.y);
 		image_yscale = sign(cos(image_angle));
 	}
-}
-
-function fire() {
-	 with(instance_create_layer(x,y,"player",o_enemy_bullet)) {
-		 pointing = other.image_angle;
-		 hsp = lengthdir_x(other.bulletSpeed,pointing);
-		 vsp = lengthdir_y(other.bulletSpeed,pointing);
-		 image_angle = pointing;
-	 }
-	 fireDelay = maxDelay;
 }

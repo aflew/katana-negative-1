@@ -2,6 +2,7 @@
 hsp = 0;
 vsp = 0;
 grv = 0.3;
+onFloor = false;
 walksp = 4;
 facing = 1;
 

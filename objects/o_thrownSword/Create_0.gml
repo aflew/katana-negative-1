@@ -13,6 +13,7 @@ pickupCD = 60;
 onFloor = 0;
 
 recall = false;
+recalldir = 0;
 damage = 2;
 
 recallstrength = 1;

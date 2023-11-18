@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+dashdir = 0;
 with (o_player) {
 	hsp = lengthdir_x(12,pointing);
 	vsp = lengthdir_y(12,pointing);
