@@ -14,7 +14,7 @@ key_throw = 0;
 
 hitfrom = 0;
 
-function die() {
+die = function() {
 	with(instance_create_layer(x,y,"player",o_dead_player)) {
 		hsp = random_range(1,3)*lengthdir_x(1,other.hitfrom);
 		alarm_set(0,100);
