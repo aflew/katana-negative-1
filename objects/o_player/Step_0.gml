@@ -34,56 +34,56 @@ key_dash = mouse_check_button_pressed(mb_right) || gamepad_button_check_pressed(
 key_attack = mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(4,gp_face3);
 key_throw = keyboard_check_pressed(ord("E")) || gamepad_button_check_pressed(4,gp_face4);
 
-
-//calc movement
-if (hascontrol) {
-	var move = key_right - key_left;
+if (!frozen) {
+	//calc movement
+	if (hascontrol) {
+		var move = key_right - key_left;
 	
-	vsp = min(vsp + grv,7);
+		vsp = min(vsp + grv,7);
 	
-	onFloor = place_meeting(x,y+1,o_wall);
+		onFloor = place_meeting(x,y+1,o_wall);
 
-	if (abs(hsp) <= walksp) && (move != 0) {
-		hsp = move*walksp;
+		if (abs(hsp) <= walksp) && (move != 0) {
+			hsp = move*walksp;
+		}
+	
+		hsp = hsp*hspdecay;
+	
+		if (onFloor) && (key_jump)
+		{
+			vsp = -7;
+		}
+	
+		calcCollision();
 	}
-	
-	hsp = hsp*hspdecay;
-	
-	if (onFloor) && (key_jump)
-	{
-		vsp = -7;
-	}
-	
-	calcCollision();
-}
 
-//animation
-if (!onFloor)	//air
-{
-	sprite_index = s_player_air;
-	image_speed = 0;
-	if (sign(vsp) > 0) 
+	//animation
+	if (!onFloor)	//air
 	{
-		image_index = 1;
-	} else image_index = 0;
-}
-
-else	// ground
-{
-	image_speed = 1;
-	if (abs(hsp) < 0.1)
-	{
-		sprite_index = s_player;
+		sprite_index = s_player_air;
+		image_speed = 0;
+		if (sign(vsp) > 0) 
+		{
+			image_index = 1;
+		} else image_index = 0;
 	}
-	else
+
+	else	// ground
 	{
-		sprite_index = s_player_run;
+		image_speed = hsp/2;
+		if (abs(hsp) < 0.1)
+		{
+			sprite_index = s_player;
+		}
+		else
+		{
+			sprite_index = s_player_run;
+		}
+	}
+	if (hsp != 0)
+	{
+		facing = sign(hsp);
+		image_xscale = facing;
 	}
 }
-if (hsp != 0)
-{
-	facing = sign(hsp);
-	image_xscale = facing;
-}
-
 

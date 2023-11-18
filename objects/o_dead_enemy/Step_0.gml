@@ -36,4 +36,3 @@ if (done == 0) {
 		image_xscale = facing;
 	}
 }
-

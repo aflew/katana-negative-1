@@ -6,7 +6,7 @@ if (active) {
 	{
 		with (o_player) {
 			hitfrom = image_angle;
-			die();
+			event_user(0);
 		}
 		instance_destroy(self);
 	}

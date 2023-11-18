@@ -1,2 +1,2 @@
 /// @description reset
-slideTransition(TRANS_MODE.RESTART);
+slideTransition(TRANS_MODE.GOTO,room);

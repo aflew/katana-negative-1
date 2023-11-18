@@ -1,0 +1,2 @@
+/// @description variables
+paused = false;
